@@ -21,7 +21,7 @@ body {
 nav {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
   background: rgba(10, 10, 10, 0.9);
   backdrop-filter: blur(20px);
   z-index: 1000;
@@ -425,18 +425,18 @@ textarea::placeholder {
 
 .footer-links-two{
   display: flex;
+  gap: 15.625rem;
 }
 
-.logo-para{
-  color: #9ca3af;
-}
-
-.footer-section {
+.footer-section{
   flex: 1;
   max-width: 350px;
   min-width: 250px;
 }
 
+.logo-para{
+  color: #9ca3af;
+}
 
 .logo-text {
   font-size: 24px;
@@ -446,6 +446,11 @@ textarea::placeholder {
 }
 
 .footer-section p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.first-links p {
   line-height: 1.6;
   margin-bottom: 20px;
 }
@@ -467,6 +472,12 @@ textarea::placeholder {
   color: #ffffff;
 }
 
+.first-links h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
 .footer-section ul {
   list-style: none;
 }
@@ -482,6 +493,24 @@ textarea::placeholder {
 }
 
 .footer-section ul li a:hover {
+  color: #3b82f6;
+}
+
+.first-links ul {
+  list-style: none;
+}
+
+.first-links ul li {
+  margin-bottom: 10px;
+}
+
+.first-links ul li a {
+  color: #9ca3af;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.first-links ul li a:hover {
   color: #3b82f6;
 }
 
@@ -524,6 +553,16 @@ textarea::placeholder {
   .section-title {
     font-size: 2rem;
   }
+
+  .footer-section{
+    width: 100px;
+  }
+   
+  .footer-links-two{
+    display: flex;
+    gap: 5.9rem;
+  }
+  
 }
 
 /* Scroll animations */
